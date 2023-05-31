@@ -4,18 +4,16 @@ https://blog.matheuscastiglioni.com.br/definindo-funcoes-em-javascript/ <br>http
 
 
 Tópicos:<br>
-Introdução<br>
-Quais vantagens do uso de função?<br>
-Estrutura básica de uma função<br>
-Declaração<br>
-Valor de retorno<br>
-Tipos de funções<br>
-Parâmetros<br>
-Como utilizar uma função?<br>
-Escopo de função<br>
-Tipos de funções<br>
-Recursividade<br>
-Considerações<br>
+-[Introdução](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#introdu%C3%A7%C3%A3o)<br>
+-[Quais vantagens do uso de função?](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#quais-vantagens-do-uso-de-fun%C3%A7%C3%A3o)<br>
+-[Estrutura básica de uma função](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#estrutura-b%C3%A1sica-de-uma-fun%C3%A7%C3%A3o)<br>
+-[Valor de retorno](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#valor-do-retorno)<br>
+-[Parâmetros](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#par%C3%A2metros)<br>
+-[Como utilizar uma função?](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#-como-utilizar-uma-fun%C3%A7%C3%A3o)<br>
+-[Escopo de função](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#-escopo-de-fun%C3%A7%C3%A3o)<br>
+-[Tipos de funções](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#tipos-de-fun%C3%A7%C3%B5es)<br>
+-[Recursividade](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#extra-recursividade-)<br>
+-[Considerações](https://github.com/Lseferin/artigos/blob/main/Artigo1.md#extra-recursividade-)<br>
 
 
 <h1>Funções</h1>
@@ -32,24 +30,21 @@ Outro motivo para utilizar seria o caso em que teríamos que alterar/ajustar alg
 
 Declaração de função: Para definirmos uma função, devemos iniciar com a palavra function, seguida pelo nome da função e opcionalmente uma lista de parâmetros entre parênteses. 
 
-`function funcao(params1, params2) {`
-<br>
-	`// ação da função`
-  <br>
-`}`
-<br>
-`funcao(valorParams1, valorParams2)`
-
+```
+function funcao(params1, params2) {
+	// ação da função
+}
+funcao(valorParams1, valorParams2)
+```
 
 
 No mundo real, em Javascript, teríamos:<br>
-`function soma(num1, num2) { `
-<br>
-	`return (num1 + num2)`
-  <br>
-`}`
-<br>
-`soma(1, 5) `
+```
+function soma(num1, num2) { 
+	return (num1 + num2)
+}
+soma(1, 5) 
+```
 
 
 <h3>Valor do retorno:</h3>
@@ -59,55 +54,41 @@ Além dos tipos normais de valor (int, float, string…), podemos ter também o 
 <br>
 <strong>Alguns tipos de retorno</strong> 
 
-String<br>
-`function ola(){`
-<br>
-	`return "Olá"`
-  <br>
-`}`
-<br>
-`console.log(ola())`
+<strong>String</strong><br>
+```
+function ola(){
+	return "Olá"
+}
+console.log(ola())
+```
 
 
 <strong>Int</strong> 
 
-`function soma(num1, num2){`
-<br>
-	`return num1 + num2;`
-  <br>
-`}`
-<br>
-`function calculadora(acao, numero1, numero2){`
-<br>
-`	var result = 0;`
-<br>
-	`switch(acao){`
-  <br>
-		`case 'soma':`
-    <br>
-			`result = soma(numero1, numero2)`
-      <br>
-		`break;`
-    <br>
-		`}`
-    <br>
-	`return result;`
-  <br>
-`}`
-<br>
-`calculadora('soma', 2, 5) => 7`
-<br>
+```
+function soma(num1, num2){
+	return num1 + num2;
+}
+function calculadora(acao, numero1, numero2){
+	var result = 0;
+	switch(acao){
+		case 'soma':
+			result = soma(numero1, numero2)
+		break;
+		}
+	return result;
+}
+calculadora('soma', 2, 5) => 7
+```
 
 <strong>Void</strong>
 
-`function ola(p1) {`
-<br>
-	`console.log(p1)`
-  <br>
-`}`
-<br>
-`ola()`
-<br>
+```
+function ola(p1) {
+	console.log(p1)
+}
+ola()
+```
 
 
 <h3>Parâmetros:</h3> 
@@ -116,29 +97,25 @@ Os parâmetros funcionam como variáveis locais e, para declará-los, adicionamo
 Os parâmetros são usados apenas no escopo da própria função.  
 No Javascript, os parâmetros não são obrigatórios. 
 
+<h2>Tipos de funções</h2>
 <h3> Função com um parâmetro</h3> 
 
-`function ola(p1) {`
-<br>
-	`console.log(p1)`
-  <br>
-`}`
-<br>
-`var p1 = "Olá"`
-<br>
-`ola(p1)`
-<br>
+```
+function ola(p1) {
+	console.log(p1)
+}
+var p1 = "Olá"
+ola(p1)
+```
 
 <h3> Função com dois parâmetros</h3> 
 
-`function ola(p1, p2) {`
-<br>
-	`console.log(p1, p2)`
-  <br>
-`}`
-<br>
-`ola("Olá", "Tudo bem?")`
-<br>
+```
+function ola(p1, p2) {
+	console.log(p1, p2)
+}
+ola("Olá", "Tudo bem?")
+```
 
 
 <h2> Como utilizar uma função?</h2> 
@@ -156,51 +133,43 @@ Quando uma variável ou função é declarada em um determinado escopo, ela só 
 Função anônima: função que não possui nomenclatura. Geralmente são usadas como argumentos de uma outra função.
 Função sem parâmetros e sem retorno.
 
-`function ola() {`
-<br>
-	`console.log("Olá")`
-  <br>
-`}`
-<br>
- `ola()`
- <br>
+```
+function ola() {
+	console.log("Olá")
+}
+ ola()
+ ```
 
 
 <h3> Função sem parâmetro e com retorno.</h3>
 
-`function ola() {`
-<br>
-	`return "Olá"`
-  <br>
-`} `
-<br>
-`console.log(ola())`
-<br>
+```
+function ola() {
+	return "Olá"
+}
+console.log(ola())
+```
 
 
 <h3>Função com parâmetro e sem retorno.</h3>
 
 
-`function ola(nome) {`
-<br>
-	`console.log("Olá")`
-  <br>
-`}`
-<br>
-`ola()`
-<br>
+```
+function ola(nome) {
+	console.log("Olá")
+}
+ola()
+```
 
 
 <h3>Função com parâmetro e com retorno. </h3>
 
-`function ola(nome) {`
-<br>
-	`return nome)`
-  <br>
-`} `
-<br>
-`ola("Lívia")`
-<br>
+```
+function ola(nome) {
+	return nome)
+}
+ola("Lívia")
+```
 
 
 
@@ -208,32 +177,29 @@ Função sem parâmetros e sem retorno.
 
 <strong>Exemplo:</strong><br>
 
-`function ola() {`
-<br>
-	`return "Olá"`
-  <br>
-`}` 
-<br>
-`console.log(ola())`
-<br>
+```
+function ola() {
+	return "Olá"
+} 
+console.log(ola())
+```
 
 
 <h3>Arrow Function:</h3> <br>Uma arrow function possui uma estrutura mais curta e objetiva que uma função normal. Possuem um retorno implícito, retornando valores sem o uso do return. <br>
 <strong>Exemplo:</strong><br> 
 
-`( ) => expressao; (parametros) => expressao; ( ) => { } `
+```( ) => expressao; (parametros) => expressao; ( ) => { } ```
 
 Obs: Se o retorno possuir apenas uma linha de código, não é necessário o uso das chaves, caso contrário o uso das chaves é obrigatório. 
 
 <h3>Função assíncrona:</h3><br> Uma função assíncrona pode conter a palavra reservada await, que pausa a execução do script e espera uma resolução da promise (promessa) passada, após isso, retorna a execução da função e retorna o valor resolvido. 
 
 
-`async function getData() {`
-<br>
-  `let response = await fetch('http://apiurl.com');`
-  <br>
-`}`
-<br>
+```
+async function getData() {
+  let response = await fetch('http://apiurl.com');
+}
+```
 
 <strong>ref:</strong> https://www.freecodecamp.org/portuguese/news/tutorial-de-async-e-await-em-javascript-como-aguardar-que-uma-funcao-se-encerre-em-js/
 
@@ -243,19 +209,18 @@ Durante o estudo, identifiquei o uso de funções recursivas. Recursão pode ser
  
 <strong>Exemplo:</strong>
 
-`function countDown(fromNumber, toNumber) {`
-<br>
-  `if (fromNumber > toNumber) {`
-  <br>
-	`console.log(fromNumber);`
-  <br>
-	`countDown(fromNumber-1, toNumber);`
-  <br>
-`}`
-<br>
-`} countDown(3, -20)`
-<br>
+```function countDown(fromNumber, toNumber) {
+  if (fromNumber > toNumber) {
+	console.log(fromNumber);
+	countDown(fromNumber-1, toNumber);
+	}
+} countDown(3, -20)
+```
 
 
 <h2>Considerações:</h2>
- Com isso, aprendemos um pouco mais sobre funções, seus tipos e quando usá-las.
+ Com isso, aprendemos um pouco mais sobre funções, seus tipos e quando usá-las. 
+
+
+
+
