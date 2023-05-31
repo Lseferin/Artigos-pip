@@ -7,15 +7,15 @@ https://santodigital.com.br/apis-nas-empresas-entenda-4-beneficios-que-elas-pode
 
 
 Tópicos:<br>
--[O que é uma API?](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#o-que-%C3%A9-uma-api-)<br>
--[Como funciona?](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#como-funciona)<br>
--[Caso de uso:](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#caso-de-uso)<br>
--[Vantagens](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#vantagens-de-usar-api)<br>
--[Como consumir uma API](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#como-consumir-uma-api)<br>
--[Padrões de API](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#padr%C3%B5es-de-api)<br>
--[API remota](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#api-remota)<br>
--[API web](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#api-web)<br>
--[GraphQL](https://github.com/Lseferin/Artigos-pip/edit/main/Artigo3.md#graphql)<br>
+-[O que é uma API?](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#o-que-%C3%A9-uma-api-)<br>
+-[Como funciona?](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#como-funciona)<br>
+-[Caso de uso:](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#caso-de-uso)<br>
+-[Vantagens](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#vantagens-de-usar-api)<br>
+-[Como consumir uma API](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#como-consumir-uma-api)<br>
+-[Padrões de API](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#padr%C3%B5es-de-api)<br>
+-[API remota](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#api-remota)<br>
+-[API web](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#api-web)<br>
+-[GraphQL](https://github.com/Lseferin/Artigos-pip/blob/main/Artigo3.md#graphql)<br>
 
 <h1>Consumo de API</h1>
 
